@@ -61,13 +61,13 @@ public class DemoController {
 		return test;
 	}
 	
-	@GetMapping(value="/paramByServlet")
-	public String getParamByServlet(HttpServletRequest request, HttpServletResponse response) {
-		String requestUrl = request.getRemoteAddr();
-		PrintWriter responseWriter = response.getWriter();
-		
-		return request.getParameter("name");
-	}
+//	@GetMapping(value="/paramByServlet")
+//	public String getParamByServlet(HttpServletRequest request, HttpServletResponse response) {
+//		String requestUrl = request.getRemoteAddr();
+//		PrintWriter responseWriter = response.getWriter();
+//		
+//		return request.getParameter("name");
+//	}
 	
 	@GetMapping(value="/userByName")
 	public String getUserByName(@RequestParam String name) {
